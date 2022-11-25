@@ -30,9 +30,9 @@ class DrawApp(QMainWindow):
         self.qp.setBrush(QColor(255, 255, 0))  
         n = random.randint(5, 20)
         for i in range(n):
-            a = random.randrange(100)
+            r = random.randrange(100)
             coords = random.randrange(ex.frameGeometry().width() - 100), random.randrange(ex.frameGeometry().height() - 100)
-            self.qp.drawEllipse(*coords, a, a)
+            self.qp.drawEllipse(*coords, r, r)
 
     def run(self):
         self.drawf()
